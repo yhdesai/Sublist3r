@@ -64,7 +64,7 @@ class verify_nameservers(multiprocessing.Process):
         resolver.timeout = 1
         resolver.lifetime = 1
         try:
-            #Lets test the letancy of our connection.
+            #Lets test the latency of our connection.
             #Google's DNS server should be an ideal time test.
             resolver.nameservers = ['8.8.8.8']
             resolver.query(self.most_popular_website, self.record_type)
